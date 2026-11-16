@@ -1,0 +1,207 @@
+.donor-desk-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.donor-desk__header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.donor-desk__title {
+  font-size: 2.25rem;
+  color: var(--spinach);
+  margin-bottom: 0.5rem;
+}
+
+.donor-desk__subtitle {
+  color: var(--muted-text);
+  font-size: 1.05rem;
+}
+
+/* Step 1: Lookup Box */
+.donor-lookup-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(14, 75, 52, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.donor-lookup-form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.donor-lookup-form input {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Listings Container */
+.donor-listings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.donor-listing-item {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(14, 75, 52, 0.12);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+
+.donor-listing-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.donor-listing-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+.donor-listing-header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.donor-listing-title {
+  font-size: 1.25rem;
+  color: var(--spinach);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.donor-listing-meta {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.donor-listing-header__right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Expandable Details & Reservations */
+.donor-listing-content {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(14, 75, 52, 0.1);
+  background-color: #fafcf9;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.donor-listing-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed rgba(14, 75, 52, 0.15);
+}
+
+.reservations-section-title {
+  font-size: 1.1rem;
+  color: var(--spinach);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.reservations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reservation-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--white);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(14, 75, 52, 0.1);
+  flex-wrap: wrap;
+}
+
+.reservation-row__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.reservation-row__name {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.reservation-row__meta {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.reservation-row__action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pickup-code-input {
+  width: 130px;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .donor-listing-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reservation-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reservation-row__action {
+    width: 100%;
+  }
+
+  .pickup-code-input {
+    flex: 1;
+  }
+}

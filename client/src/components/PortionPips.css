@@ -1,0 +1,57 @@
+.portion-pips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.portion-pips__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.portion-pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--spinach);
+  background-color: transparent;
+  box-sizing: border-box;
+  transition: background-color var(--transition);
+}
+
+.portion-pip--available {
+  background-color: var(--spinach);
+}
+
+.portion-pip--reserved {
+  background-color: transparent;
+  border-color: rgba(14, 75, 52, 0.3);
+}
+
+/* Progress bar for > 30 units */
+.portion-progress-track {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(14, 75, 52, 0.12);
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portion-progress-fill {
+  height: 100%;
+  background-color: var(--spinach);
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+.portion-pips__label {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

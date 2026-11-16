@@ -1,0 +1,43 @@
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  min-height: 60vh;
+  gap: 1.25rem;
+}
+
+.not-found-code {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--spinach);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  position: relative;
+}
+
+.not-found-code span {
+  color: var(--lime);
+}
+
+.not-found-title {
+  font-size: 2rem;
+  color: var(--spinach);
+}
+
+.not-found-desc {
+  max-width: 480px;
+  color: var(--muted-text);
+  font-size: 1.05rem;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

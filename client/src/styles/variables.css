@@ -1,0 +1,35 @@
+:root {
+  --spinach: #0E4B34;
+  --lime: #CDEB6B;
+  --paper: #F3F6F1;
+  --ink: #15231B;
+  --tomato: #D8442F;
+  --white: #FFFFFF;
+  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 3px rgba(14,75,52,0.08);
+  --shadow-md: 0 4px 12px rgba(14,75,52,0.12);
+  --shadow-lg: 0 8px 24px rgba(14,75,52,0.16);
+  --transition: 0.2s ease;
+  --max-width: 1200px;
+
+  /* Category colors */
+  --cat-cooked: #D97706;
+  --cat-cooked-bg: #FEF3C7;
+  --cat-packaged: #2563EB;
+  --cat-packaged-bg: #DBEAFE;
+  --cat-produce: #059669;
+  --cat-produce-bg: #D1FAE5;
+  --cat-bakery: #B45309;
+  --cat-bakery-bg: #FDE68A;
+  --cat-other: #64748B;
+  --cat-other-bg: #F1F5F9;
+
+  /* Status and border helpers */
+  --border-light: rgba(14, 75, 52, 0.12);
+  --border-focus: var(--lime);
+  --muted-text: #526357;
+}
